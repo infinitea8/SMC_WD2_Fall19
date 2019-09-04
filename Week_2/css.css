@@ -1,0 +1,26 @@
+body {margin: 0px;
+}
+
+
+nav {background-color: lightcyan
+}
+
+nav li {border-bottom:
+    1px solid
+    #212259;
+    padding:10px;
+    margin:10px;
+}
+
+nav ul {
+list-style: none;
+padding-left: 0px;
+margin: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #212259;
+    text-transform: uppercase
+
+}
