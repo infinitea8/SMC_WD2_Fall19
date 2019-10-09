@@ -29,12 +29,6 @@ nav ul a {
     text-transform: uppercase;
 }
 
-* {
-    font-family: brandon-grotesque, sans-serif;
-font-style: normal;
-font-weight: 100;
- }
-    
 @media(min-width: 540px){
     nav ul li {
         display: inline-block;
@@ -50,20 +44,3 @@ font-weight: 100;
     nav {
         padding: 0px 10px;
     }
-    /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-  }
-
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
