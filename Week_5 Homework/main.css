@@ -78,7 +78,7 @@ h4 {
   .children{
 	background: #ffdb4c;
 	height: 300px;
-	position: absolute;
+	position: relative;
 	top: 50%;
 	transform: 			translateY(-50%);
 }
