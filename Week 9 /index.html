@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+    <header>
+        <nav id="navbar">
+            <button id="colorButton">Color Me!</button>
+            <button id="FontButton">Font Change!</button>
+            <button id="fontfamilybutton">Typechange</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1>Stay Ready so you don't have to get ready</h1>
+        </div>
+        <div id="contentFont">
+            <h2>We Train, and life works out.</h2>
+        </div>
+       <div id = "contentFontFamily">
+           <h2> Lead, follow or get the fuck out da way</h2>
+       </div>
+        
+
+    </main>
+        <footer>
+        </footer>
+        <script>
+             document.getElementById("colorButton") .addEventListener("click", function(){
+                 console.log("it!");
+                 var mainContent =document.getElementById("contentMain");
+                 var redComponent =Math.random()*255;
+                 var greenComponent = Math.random()*255;
+                 var blueComponent = Math.random()*255;
+
+                console.log("Red: " + redComponent);
+                console.log("Green: " + greenComponent);
+                console.log("Blue: " + blueComponent);
+                 var compRGBString = "rgb(" + redComponent +","+ greenComponent + "," + blueComponent + ")";
+
+                console.log("compRGBString");
+
+                mainContent.style.backgroundColor=compRGBString;
+                mainContent.style.height = "768px";
+                mainContent.style.fontFamily = "Arial, sans-serif"
+                
+             });
+
+
+             
+            document.getElementById("contentMain").style.backgroundColor = "rgb(255,0,0)";
+            document.getElementById("FontButton").addEventListener("click", function(){
+                var fontContent = document.getElementById("contentFont");
+                fontContent.style.fontSize = "60px";
+            });
+            document.getElementById("fontfamilybutton").addEventListener( "click", function (){
+                var fontfamilyContent =document.getElementById("contentFontFamily");
+                fontfamilyContent.style.fontFamily = "arial";
+            });
+            
+
+            prompt("Hey, whats your name shawty!");
+        </script>
+    </body>
+    </html>
