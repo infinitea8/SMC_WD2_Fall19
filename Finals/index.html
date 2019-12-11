@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <title>The Tree</title>
+
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: brandon-grotesque, sans-serif; 
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffffff;
+  color :green;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: white;
+  color: green;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+
+</style>
+
+<body>
+   
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+ /* When your mouse cursor enter the background, the fading won't pause and keep playing */ 
+ $('.carousel').carousel({
+    pause: "false" /* Change to true to make it paused when your mouse cursor enter the background */
+});
+
+    </script>
+
+
+    <div class="topnav"id="myTopnav">
+        <a href="index.html"class="active">Home</a>
+        <a href="aboutus.html" >About Us</a>
+        <a href="ourstudio.html">Our Studio</a>
+        <a href="ourcommunity.html">Our Community</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html">Donate</a>
+        <a href="blog.html">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div style="padding-left:16px">
+
+    </div>
+
+    <div class="container-fluid main">
+
+      
+        <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active background a"></div>
+            <div class="item background b"></div>
+            <div class="item background c"></div>
+          </div>
+        </div>
+        
+        <div class="covertext">
+          <div class="col-lg-10" style="float:none; margin:0 auto;">
+            <h1 class="title">ELINE</h1>
+            <h3 class="subtitle">A Tidy, Clean, Easy-to-Use, and Responsive Landing Page Template</h3>
+          </div>
+          <div class="col-xs-12 explore">
+            <a href="#"><button type="button" class="btn btn-lg explorebtn">EXPLORE</button></a>
+          </div>
+        </div>
+        
+      </div>
+
+</body>
+</html>

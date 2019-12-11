@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <title>My life</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+    <style>
+                * {
+            box-sizing: border-box;
+        }
+        
+    
+    </style>
+
+
+<body>
+        <body style="margin-top: 0px;">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="ourstudio.html" class="active">Our Studio</a>
+        <a href="ourcommunity.html">Our Community</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html">Donate</a>
+        <a href="blog.html">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div style="padding-left:16px"></div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <header>
+        <h2>Our Classes</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Cincinnati</a></li>
+                <li><a href="#">Atlanta</a></li>
+                <li><a href="#">Cali</a></li>
+                <li><a href="#">Singapore</a></li>
+                <li><a href="#">Bali</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Cincinnati</h1>
+            <p>Where it all began. The Queen city.</p>
+            <p>During the first forty years after its founding, Cincinnati experienced spectacular growth. By 1820, citizens, extremely proud of their city, were referring to it as The Queen City or The Queen of the West. On May 4, 1819, Ed. B. Cooke wrote
+                in the Inquisitor and Cincinnati Advertiser, "The City is, indeed, justly styled the fair Queen of the West: distinquished for order, enterprise, public spirit, and liberality, she stands the wonder of an admiring world."</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+
+</body>
+
+</html>

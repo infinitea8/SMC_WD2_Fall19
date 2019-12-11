@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <title>My life</title>
+    <style>
+     * {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+    </style>
+<body>
+        
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" >Home</a>
+      <a href="aboutus.html" >About Us</a>
+      <a href="ourstudio.html">Our Studio</a>
+      <a href="ourcommunity.html">Our Community</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html">Donate</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div style="padding-left:16px">
+        <h2>Why Practice Mindfulness?</h2>
+        <p>Steps to practicing mindfulness</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="header">
+        <h2></h2>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Yoga in the Neighborhood</h2>
+                <h5>September 7, 2018</h5>
+                <div class="Image">
+                        <img src="/Users/thomasthetank/GitHub/SMC_WD2_Fall19/Finals/Images for Greentree Yoga/Building/IMG_8624.JPG" alt="Yoga Teacher Training" style="height:200px">
+                <p><b>From a young age up through high school, 3–4 times a week, my attire was a dress shirt, tie (sometimes), slacks, with penny loafers on my feet and a Bible in my hand.<b></p> 
+                    <p>Knocking on doors selling watchtowers and awakes magazines. My life had two faces. The face I wore while going to a newly segregated school, and the one I wore as a Jehovahs witnes, where we were supposed to be blind to race after school. Now, add to that conundurm, the whispers from a Mom and Pops who were from the South, how they felt in moments of racial pressure. You can just imagine me peeping through the blindfold when I heard them think out loud. It was quite confusing...</p>
+            </div>
+            <div class="card">
+                <h2>Competition is within us</h2>
+                <h5>October 29, 2018</h5>
+                <div class="Image">
+                        <img src="/Users/thomasthetank/GitHub/SMC_WD2_Fall19/Finals/Images for Greentree Yoga/Our Teachers/Katy.jpg" alt="Katy" style="height:200px">
+                                     
+                       
+                <em>The National Strength and Conditioning Association asserts that the top benefits for incorporating Strength and Conditioning are:</em>
+               
+                    <p> Kids are quitting team sports it seems. But, why? What else is catching their attention? Let's begin with the examples set on social media by young, multi-talented, multi-millionaire in some case billionaire influencers like Kylie Jenner, @HudaKattan, @camerondallas, @Zackking. In business there are App developers, Ryan Orbuch or Alexandra Jordan, or musically, artists like Cardi B, Ariana Grande and many more. All Less than 28 years of age!<p>
+
+                          
+           
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:75%;">Image</div>
+                <img src="images/thomasstandingwhitebackgroundnosmile.jpg" alt="learning how to live" style="height:100px">
+                <p></p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

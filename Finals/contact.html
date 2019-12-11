@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <title>My life</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+        <body style="margin-top: 0px;">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="ourstudio.html">Our Studio</a>
+        <a href="ourcommunity.html">Our Community</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="donate.html">Donate</a>
+        <a href="blog.html">Blog</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="container">
+        <h1>"The Tree Los Angeles </h1>
+   
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>We are building community here, Join us</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="/Users/thomasthetank/GitHub/SMC_WD2_Fall19/Finals/Images for Greentree Yoga/Building/Corner+shot+highrez83rdWestern.jpg" alt="83rd & Western" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
