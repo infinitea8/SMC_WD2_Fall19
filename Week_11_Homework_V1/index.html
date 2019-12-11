@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+      
+  #foo {
+    background: yellow;
+  }
+  p {
+    margin:10px;
+    font-size: 20px;
+  }
+  .selected {
+    color: red;
+  }
+  .highlight {
+    background: yellow;
+  }
+       
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+</head>
+<body>
+   <div>
+        <p> The box was given to Skinsky before sunrise. At sunrise the Count could appear in his own form. Here, we ask why Skinsky was chosen at all to aid in the work? In my husband's diary, Skinsky is mentioned as dealing with the Slovaks who trade down the river to the port; and the man's remark, that the murder was the work of a Slovak, showed the general feeling against his class. The Count wanted isolation. </p>
+        <div id="Whatup">Change gone come</div>
+        <p>Hello</p>
+        <p>cruel</p>
+        <p>World</p>
+         
+    </div>
+
+
+            <script>
+            $( "p" ).insertAfter( "#Whatup" );
+            $( "p" ).last().addClass( "selected highlight" );
+            </script>
+            
+</body>
+</html>

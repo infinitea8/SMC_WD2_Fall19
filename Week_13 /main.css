@@ -1,0 +1,43 @@
+.flex-container{
+    background-color: brown;
+    display:flex;
+    /*
+    EXPERIMENTS WITH CONTAINERS:
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    align_content: space-evenly; */
+}
+
+
+
+.flex-item {
+    margin: 10px;
+}
+
+.flex-item:nth-child(1) {
+    background-color: cadetblue;
+
+}
+
+.flex-item:nth-child(2) {
+    background-color: crimson;
+}
+
+.flex-item:nth-child(3) {
+    background-color: darkolivegreen;
+    
+}
+.flex-item:nth-child(4) {
+    background-color: darkturquoise;
+    
+}
+.flex-item:nth-child(5) {
+    background-color: green;
+}
+.flex-item:nth-child(6) {
+    background-color: goldenrod;
+    
+}
